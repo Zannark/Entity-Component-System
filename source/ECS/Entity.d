@@ -34,7 +34,6 @@ abstract class BaseEntity
 unittest
 {
 	import std.stdio;
-	import std.conv;
 
 	class TestEntity : BaseEntity
 	{
