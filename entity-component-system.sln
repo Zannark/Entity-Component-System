@@ -1,0 +1,16 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{88D934A2-7E48-44CD-9A50-59BA1990222D}") = "entity-component-system", ".dub/entity-component-system.visualdproj", "{F86C8908-C37A-4807-989A-A490FFF2221E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		debug|Win32 = debug|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F86C8908-C37A-4807-989A-A490FFF2221E}.debug|Win32.ActiveCfg = debug|Win32
+		{F86C8908-C37A-4807-989A-A490FFF2221E}.debug|Win32.Build.0 = debug|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
