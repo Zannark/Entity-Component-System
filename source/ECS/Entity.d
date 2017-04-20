@@ -24,12 +24,18 @@ abstract class BaseEntity
 	///-----Functions used for sending messages across entities-----
 	///An event which is triggered everytime a message is sent.
 	protected void OnSend();
+
 	///The function which is used to send messages across entities. Triggers OnSend.
+	///Params:
+	///		Message - The message to send.
 	public SendInformation Send(ComponentMessage!Object Message);
 	
 	///The event which is triggered when ever a message is recieved.
 	protected void OnRecieve();
+
 	///The function which is called when ever a message is recieved.
+	///Params:
+	///		Message - The message to recieve.
 	public void Recieve(ComponentMessage!Object Message);
 
 	///-----Interaction functions------

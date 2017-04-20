@@ -176,6 +176,16 @@ unittest
 	Sys.AllDo();
 
 	Sys.Send("Test1", "Test2", new TestEntity("Boob"));
+	Sys.Send("Test1", "Test2", new TestEntity("Boob"));
+	Sys.Send("Test1", "Test2", new TestEntity("Boob"));
+	Sys.Send("Test1", "Test2", new TestEntity("Boob"));
+	Sys.Send("Test1", "Test2", new TestEntity("Boob"));
+	Sys.Send("Test1", "Test2", new TestEntity("Boob"));
+	Sys.Send("Test1", "Test2", new TestEntity("Boob"));
+	Sys.Send("Test1", "Test2", new TestEntity("Boob"));
+	Sys.Send("Test1", "Test2", new TestEntity("Boob"));
+	Sys.Send("Test1", "Test2", new TestEntity("Boob"));
+	Sys.Send("Test1", "Test2", new TestEntity("Boob"));
 	Sys.FlushMessages();
 
 	writeln("Does an entity with ID 'Test' exsist? ", Sys.Exsists("Test1"));
