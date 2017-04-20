@@ -32,6 +32,9 @@ abstract class BaseEntity
 	///The function which is called when ever a message is recieved.
 	public void Recieve(ComponentMessage!Object Message);
 
+	///-----Interaction functions------
+	public abstract void Do();
+
 	///-----Utility functions-----
 	public string GetID()
 	{
@@ -63,6 +66,17 @@ unittest
 		{
 			this.OnSend();
 			return SendStatus.Success;
+		}
+
+		public override void Do()
+		{
+			int Total = 0;
+			for(int i = 1; i < 11; i++)
+			{
+				Total += i;
+			}
+
+			writeln(Total);
 		}
 
 		protected override void OnRecieve()
