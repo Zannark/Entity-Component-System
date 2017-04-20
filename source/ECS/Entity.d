@@ -16,6 +16,11 @@ import ECS.Message;
 */
 abstract class BaseEntity
 {
+	public this(string ID)
+	{
+		this.EntityID = ID;
+	}
+
 	///-----Functions used for sending messages across entities-----
 	///An event which is triggered everytime a message is sent.
 	protected void OnSend();
@@ -26,6 +31,12 @@ abstract class BaseEntity
 	protected void OnRecieve();
 	///The function which is called when ever a message is recieved.
 	public void Recieve(ComponentMessage!Object Message);
+
+	///-----Utility functions-----
+	public string GetID()
+	{
+		return this.EntityID;
+	}
 	 
 	///The ID which this entity is known for.
 	///Possibly make faster by using an automatically assigned int?
@@ -39,6 +50,7 @@ unittest
 	{
 		public this(string ID)
 		{
+			super(ID);
 			this.EntityID = ID;
 		}
 
