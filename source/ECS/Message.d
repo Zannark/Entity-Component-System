@@ -1,5 +1,6 @@
 module ECS.Message;
 
+import std.typecons;
 import ECS.Entity;
 
 /*
@@ -12,6 +13,8 @@ enum SendStatus
 	Failure,
 	Unknown
 }
+
+alias SendInformation = Tuple!(SendStatus, ComponentMessage!Object);
 
 /*
 	This allows for inter-entity communication across a single system.

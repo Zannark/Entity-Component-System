@@ -25,7 +25,7 @@ abstract class BaseEntity
 	///An event which is triggered everytime a message is sent.
 	protected void OnSend();
 	///The function which is used to send messages across entities. Triggers OnSend.
-	public SendStatus Send(ComponentMessage!Object Message);
+	public SendInformation Send(ComponentMessage!Object Message);
 	
 	///The event which is triggered when ever a message is recieved.
 	protected void OnRecieve();
@@ -62,10 +62,10 @@ unittest
 			writeln("Sent Message");
 		}
 
-		public override SendStatus Send(ComponentMessage!Object Message)
+		public override SendInformation Send(ComponentMessage!Object Message)
 		{
 			this.OnSend();
-			return SendStatus.Success;
+			return SendInformation(SendStatus.Success, Message);
 		}
 
 		public override void Do()
