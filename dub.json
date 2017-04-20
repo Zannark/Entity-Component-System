@@ -3,7 +3,13 @@
 	"authors": [
 		"sherb"
 	],
-	"description": "A minimal D application.",
+	"description": "A entity compent system designed by me, for me.",
 	"copyright": "Copyright © 2017, sherb",
-	"license": "proprietary"
+	"license": "MIT",
+
+	"buildTypes" : {
+		"release" : { "buildOptions": ["releaseMode", "optimize", "inline"] }
+	},
+
+	"targetType" : "library"
 }
